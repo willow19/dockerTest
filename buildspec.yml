@@ -7,7 +7,7 @@ phases:
       python: 3.7
   pre_build:
     commands:
-      - echo.Logging in to Amazon ECR...
+      - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=720197048531.dkr.ecr.us-west-2.amazonaws.com/docker
