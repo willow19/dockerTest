@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="oauth"></script>
+  <title>
+	Test Auth
+  </title>
+</head>
+<body>
+  Here to prove a point!
+  <script>
+	OAuth.initialize('_b0EYcAidwD3KNKX4NKZmuyhSmk');
+	//Using popup (option 1)
+OAuth.popup('facebook')
+.done(function(result) {
+ //use result.access_token in your API request 
+ //or use result.get|post|put|del|patch|me methods (see below)
+console.log(result.access_token);
+console.log(result);
+})
+.fail(function (err) {
+ //handle error with err
+console.log(err);
+})
+  </script>
+</body>
+</html>
