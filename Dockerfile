@@ -20,4 +20,4 @@ ENV NAME World
 CMD ["python", "app.py"]
 
 # Set proxy server, replace host:port with values for your servers
-ENV http_proxy 3.18.213.108:80
+ENV http_proxy host:port

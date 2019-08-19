@@ -2,11 +2,11 @@ from flask import Flask, send_from_directory
 from redis import Redis, RedisError
 import os
 import socket
-from apscheduler.schedulers.background import BackgroundScheduler
+#from apscheduler.schedulers.background import BackgroundScheduler
 
 # Start the scheduler
-sched = BackgroundScheduler()
-sched.start()
+#sched = BackgroundScheduler()
+#sched.start()
 
 # Connect to Redis
 redis = Redis(host="redis", db=0, socket_connect_timeout=2, socket_timeout=2)
